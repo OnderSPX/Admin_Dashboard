@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>SPEXRON | Admim Panel</title>
+</head>
+<body>
+    
+    <!-- Sidebar | Kenar çubuğu -->  
+    
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>SPEXRON </span>MEDIA</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Yönetici Paneli</a></li>
+            <li><a href="#"><i class='bx bx-store-alt'></i>Mağaza</a></li>
+            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analiz</a></li>
+            <li><a href="#"><i class='bx bx-message-square-dots'></i>Destek</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Kullanıcılar</a></li>
+            <li><a href="#"><i class='bx bx-cog'></i>Ayarlar</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Çıkış Yap
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of sidebar | Kenar çubuğu bitişi -->
+
+    <!-- Main Content | Ana içerik -->
+
+    <div class="content">
+        <!-- Navbar | Gezinti Çubuğu -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Ara...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notify">
+                <i class='bx bx-bell'></i>
+                <span class="count">7</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="Fotolar/spexron black.png">   <!-- İstediğiniz fotoğrafı buraya koyun | Put any photo you want here -->
+            </a>
+        </nav>
+        
+        <!-- End of Navbar | Gezinti çubuğu bitişis -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Yönetici Paneli</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                            Analiz
+                        </a></li>
+                        /
+                        <li><a href="#" class="active">Mağaza</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span> İndir CSV</span>
+                </a>
+            </div>
+
+            <!-- Insights | Görüşler -->
+
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            1,368
+                        </h3>
+                        <p>Ücretli sipariş</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            3,927
+                        </h3>
+                        <p>Web Sitesi ziyareti</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            14,589
+                        </h3>
+                        <p>Web'de arama</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            $6,487
+                        </h3>
+                        <p>Toplam Satış</p>
+                    </span>
+                </li>
+            </ul>
+            
+            <!-- End of Insights | Analizlerin bitişi -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Son Siparişler</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kullanıcı</th>
+                                <th>Sipariş Tarihi</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="Fotolar/person.jpg">
+                                    <p>Müşteri-1</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Tamamlandı</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Fotolar/person.jpg">
+                                    <p>Müşteri-2</p>
+                                </td>
+                                <td>16-09-2023</td>
+                                <td><span class="status pending">İşleniyor</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Fotolar/person.jpg">
+                                    <p>Müşteri-3</p>
+                                </td>
+                                <td>19-09-2023</td>
+                                <td><span class="status process">Beklemede</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Fotolar/person.jpg">
+                                    <p>Müşteri-4</p>
+                                </td>
+                                <td>20-09-2023</td>
+                                <td><span class="status cancelled">İptal Edildi</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders | Hatırlatıcılar -->
+
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Hatırlatıcılar</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Site Analizi Yap</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Siparişleri Kontrol Et</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Destek Mesajlarını kontrol Et</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- End of Reminders | Hatırcıların Bitişi -->
+
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
+
+
+<!-- CODED AND DESIGNED BY SPEXRON -->
